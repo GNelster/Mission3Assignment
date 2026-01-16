@@ -5,14 +5,13 @@ namespace Mission3Assignment;
 
 public class FoodItem
 {
+    public string itemName { get; set; }
+    public string itemCategory { get; set; }
+    public int itemQuantity { get; set; }
+    public string itemExpDate { get; set; }
 
     public FoodItem(string name, string category, int quantity, string expDate)
     {
-        string itemName = "";
-        string itemCategory = "";
-        int itemQuantity = 0;
-        string itemExpDate = "";
-
         itemName = name;
         itemCategory = category;
         itemQuantity = quantity;
@@ -50,7 +49,7 @@ public class FoodItem
             
         // Add object to foodItemsList
         foodItemsList.Add(itemObj);
-        Console.WriteLine("Item added successfully!\n");
+        Console.WriteLine("Item added successfully!");
     }
     
     // TODO: Method for Delete Item
@@ -59,9 +58,17 @@ public class FoodItem
         
     }
     
-    // TODO: Method for Print List of Items
-    public void ViewItems()
+    public void ViewItems(List<FoodItem> foodItemsList)
     {
-        
+        Console.WriteLine("\nITEMS");
+        // Print out items inside the foodItemsList.
+        for (int i = 0; i < foodItemsList.Count; i++)
+        {
+            // Prints Item list with each individual menu item
+            Console.WriteLine((i + 1) + ": " + foodItemsList[i].itemName 
+                              + " | " + foodItemsList[i].itemCategory 
+                              + " | " + foodItemsList[i].itemQuantity 
+                              + " | " + foodItemsList[i].itemExpDate);
+        }
     }
 }

@@ -36,17 +36,18 @@ while (true)
     // Handle the choice
     switch (menuChoice)
     {
-        case 1:
-            
+        case 1: 
+            // Declare and Instantiate new object
             FoodItem addItem = new FoodItem("", "", 0, "");
             addItem.AddItem(foodItemsList); // Call AddItem Method with created instance
-            
             break;
         case 2:
             // TODO: Call Delete Item Method
             break;
         case 3:
-            // TODO: View Current Item Method
+            // Declare and Instantiate new object
+            FoodItem printList = new FoodItem("", "", 0, "");
+            printList.ViewItems(foodItemsList); // Call ViewItems Method with created instance
             break;
         case 4:
             Console.WriteLine(); // Padding for readability
