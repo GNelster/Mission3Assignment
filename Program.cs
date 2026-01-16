@@ -10,8 +10,6 @@ using System.Collections.Generic;
 // List to hold Food Items
 List<FoodItem> foodItemsList = new List<FoodItem>();
 
-int menuChoice;
-
 // Menu System
 while (true)
 {
@@ -25,11 +23,9 @@ while (true)
     string input = Console.ReadLine();
     
     // Try to convert string -> int
-    if (!int.TryParse(input, out menuChoice) || menuChoice < 1 || menuChoice > 4)
+    if (!int.TryParse(input, out int menuChoice) || menuChoice < 1 || menuChoice > 4)
     {
-        Console.WriteLine(); // Padding for readability
-        Console.WriteLine("Sorry, that is not a valid option. Please try again: ");
-        Console.WriteLine(); // Padding for readability
+        Console.WriteLine("\nSorry, that is not a valid option. Please try again: \n");
         continue; // Goes back to start of loop
     }
     
@@ -50,8 +46,7 @@ while (true)
             printList.ViewItems(foodItemsList); // Call ViewItems Method with created instance
             break;
         case 4:
-            Console.WriteLine(); // Padding for readability
-            Console.WriteLine("Goodbye! Have a great day. :)");
+            Console.WriteLine("\nGoodbye! Have a great day. :)");
             return;
     }
     
