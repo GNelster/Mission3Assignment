@@ -1,0 +1,14 @@
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/bin/Debug/net8.0/Mission3Assignment
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/bin/Debug/net8.0/Mission3Assignment.deps.json
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/bin/Debug/net8.0/Mission3Assignment.runtimeconfig.json
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/bin/Debug/net8.0/Mission3Assignment.dll
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/bin/Debug/net8.0/Mission3Assignment.pdb
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/Mission3Assignment.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/Mission3Assignment.AssemblyInfoInputs.cache
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/Mission3Assignment.AssemblyInfo.cs
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/Mission3Assignment.csproj.CoreCompileInputs.cache
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/Mission3Assignment.dll
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/refint/Mission3Assignment.dll
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/Mission3Assignment.pdb
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/Mission3Assignment.genruntimeconfig.cache
+/Users/gnelman/Documents/BYU/IS JUNIOR CORE/Winter 2026/IS 413 - Application Dev/Mission 3 Assignment/Mission3Assignment/obj/Debug/net8.0/ref/Mission3Assignment.dll
