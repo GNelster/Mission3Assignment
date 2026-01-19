@@ -52,37 +52,43 @@ public class FoodItem
         Console.WriteLine("Item added successfully!");
     }
     
-    // TODO: Method for Delete Item
     public void DeleteItem(List<FoodItem> foodItemsList)
     {
         int index = 0;
-        
-        Console.WriteLine("\nITEMS");
-        // Print out items inside the foodItemsList.
-        for (int i = 0; i < foodItemsList.Count; i++)
+
+        // System check to make sure there are items in the system prior to allowing the user to delete an item.
+        if (foodItemsList.Count > 0)
         {
-            // Prints Item list with each individual menu item
-            Console.WriteLine((i + 1) + ": " + foodItemsList[i].itemName 
-                              + " | " + foodItemsList[i].itemCategory 
-                              + " | " + foodItemsList[i].itemQuantity 
-                              + " | " + foodItemsList[i].itemExpDate);
-        }
-        // Get input on what item to delete
-        Console.WriteLine(("\nWhat item would you like to delete? "));
-        index = int.Parse(Console.ReadLine());
+            Console.WriteLine("\nITEMS");
+            // Print out items inside the foodItemsList.
+            for (int i = 0; i < foodItemsList.Count; i++)
+            {
+                // Prints Item list with each individual menu item
+                Console.WriteLine((i + 1) + ": " + foodItemsList[i].itemName 
+                                  + " | " + foodItemsList[i].itemCategory 
+                                  + " | " + foodItemsList[i].itemQuantity 
+                                  + " | " + foodItemsList[i].itemExpDate);
+            }
+            // Get input on what item to delete
+            Console.WriteLine(("\nWhat item would you like to delete? "));
+            index = int.Parse(Console.ReadLine());
         
-        // Convert the menu option to its corresponding list location
-        foodItemsList.RemoveAt(index - 1);
-        Console.WriteLine("Item deleted successfully!");
+            // Convert the menu option to its corresponding list location
+            foodItemsList.RemoveAt(index - 1);
+            Console.WriteLine("Item deleted successfully!");
+        }
+        else
+        {
+            Console.WriteLine("There are currently no items in the system, so there is nothing to delete.");
+        }
     }
     
     public void ViewItems(List<FoodItem> foodItemsList)
     {
-        
         // If list is empty, print out message
         if (foodItemsList.Count == 0)
         {
-            Console.WriteLine("\nThere is currently no items in the system.");
+            Console.WriteLine("\nThere are currently no items in the system, so there's nothing to see here.");
         }
         else
         {
