@@ -13,6 +13,7 @@ List<FoodItem> foodItemsList = new List<FoodItem>();
 // Menu System
 while (true)
 {
+    // Prints menu information to the console
     Console.WriteLine("Hello, welcome to the Food Bank Inventory Management System. " +
                       "Please choose an option below to get started (1-4): ");
     Console.WriteLine("1. Add Food Items");
@@ -48,9 +49,9 @@ while (true)
             printList.ViewItems(foodItemsList); // Call ViewItems Method with created instance
             break;
         case 4:
+            // Ending program message / farewell
             Console.WriteLine("\nGoodbye! Have a great day. :)");
             return;
     }
-    
     Console.WriteLine(); // Extra line for readability before printing the menu again.
 }

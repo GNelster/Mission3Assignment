@@ -5,11 +5,13 @@ namespace Mission3Assignment;
 
 public class FoodItem
 {
+    // Makes FoodItem objects immutable -- they cannot be changed after created.
     public string itemName { get;}
     public string itemCategory { get;}
     public int itemQuantity { get;}
     public string itemExpDate { get;}
 
+    // Constructor for the FoodItem Class
     public FoodItem(string name, string category, int quantity, string expDate)
     {
         itemName = name;
