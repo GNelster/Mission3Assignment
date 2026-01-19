@@ -5,10 +5,10 @@ namespace Mission3Assignment;
 
 public class FoodItem
 {
-    public string itemName { get; set; }
-    public string itemCategory { get; set; }
-    public int itemQuantity { get; set; }
-    public string itemExpDate { get; set; }
+    public string itemName { get;}
+    public string itemCategory { get;}
+    public int itemQuantity { get;}
+    public string itemExpDate { get;}
 
     public FoodItem(string name, string category, int quantity, string expDate)
     {
@@ -53,13 +53,10 @@ public class FoodItem
     }
     
     // TODO: Method for Delete Item
-    public void DeleteItem()
+    public void DeleteItem(List<FoodItem> foodItemsList)
     {
+        int index = 0;
         
-    }
-    
-    public void ViewItems(List<FoodItem> foodItemsList)
-    {
         Console.WriteLine("\nITEMS");
         // Print out items inside the foodItemsList.
         for (int i = 0; i < foodItemsList.Count; i++)
@@ -69,6 +66,36 @@ public class FoodItem
                               + " | " + foodItemsList[i].itemCategory 
                               + " | " + foodItemsList[i].itemQuantity 
                               + " | " + foodItemsList[i].itemExpDate);
+        }
+        // Get input on what item to delete
+        Console.WriteLine(("\nWhat item would you like to delete? "));
+        index = int.Parse(Console.ReadLine());
+        
+        // Convert the menu option to its corresponding list location
+        foodItemsList.RemoveAt(index - 1);
+        Console.WriteLine("Item deleted successfully!");
+    }
+    
+    public void ViewItems(List<FoodItem> foodItemsList)
+    {
+        
+        // If list is empty, print out message
+        if (foodItemsList.Count == 0)
+        {
+            Console.WriteLine("\nThere is currently no items in the system.");
+        }
+        else
+        {
+            Console.WriteLine("\nITEMS");
+            // Print out items inside the foodItemsList.
+            for (int i = 0; i < foodItemsList.Count; i++)
+            {
+                // Prints Item list with each individual menu item
+                Console.WriteLine((i + 1) + ": " + foodItemsList[i].itemName 
+                                  + " | " + foodItemsList[i].itemCategory 
+                                  + " | " + foodItemsList[i].itemQuantity 
+                                  + " | " + foodItemsList[i].itemExpDate);
+            }
         }
     }
 }
