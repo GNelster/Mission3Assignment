@@ -14,10 +14,10 @@ public class FoodItem
     // Constructor for the FoodItem Class
     public FoodItem(string name, string category, int quantity, string expDate)
     {
-        itemName = name;
-        itemCategory = category;
-        itemQuantity = quantity;
-        itemExpDate = expDate;
+        this.itemName = name;
+        this.itemCategory = category;
+        this.itemQuantity = quantity;
+        this.itemExpDate = expDate;
     }
     
     public void AddItem(List<FoodItem> foodItemsList)
